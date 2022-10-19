@@ -1,6 +1,6 @@
 import Race from './Race';
 
-export default class Elf extends Race {
+export default class Orc extends Race {
   private _maxLifePoints = 74;
   private static _createdRacesInstances = 0;
     
