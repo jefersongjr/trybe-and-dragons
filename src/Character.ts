@@ -1,7 +1,6 @@
 import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
 import Fighter from './Fighter';
-// import Fighter from './Fighter';
 import Race, { Elf } from './Races';
 import getRandomInt from './utils';
 
@@ -52,7 +51,7 @@ export default class Character implements Fighter {
   }
 
   public get energy(): Energy {
-    return this._energy;
+    return { ...this._energy };
   }
 
   public get dexterity(): number {
